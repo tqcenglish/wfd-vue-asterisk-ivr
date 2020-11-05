@@ -1,0 +1,59 @@
+{
+  "name": "wfd-vue",
+  "version": "1.0.12",
+  "private": false,
+  "description": "a workflow designer base on @antv/g6",
+  "main": "dist/wfd-vue.umd.min.js",
+  "scripts": {
+    "serve": "vue-cli-service serve example/main.js",
+    "build-example": "vue-cli-service build example/main.js --dest docs",
+    "build": "vue-cli-service build --target lib --name wfd-vue src/index.js",
+    "test": "vue-cli-service test:unit"
+  },
+  "files": [
+    "dist"
+  ],
+  "authors": {
+    "name": "guozhaolong",
+    "email": "guozhaolong@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guozhaolong/wfd-vue/issues"
+  },
+  "homepage": "https://github.com/guozhaolong/wfd-vue#readme",
+  "directories": {
+    "example": "example"
+  },
+  "keywords": [
+    "vue",
+    "workflow",
+    "diagram",
+    "g6"
+  ],
+  "author": "stevenkwok",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guozhaolong/wfd-vue.git"
+  },
+  "dependencies": {
+    "@antv/dom-util": "2.0.2",
+    "@antv/g-canvas": "^0.4.12",
+    "@antv/g6": "3.5.2",
+    "@antv/matrix-util": "2.0.7",
+    "@antv/util": "~2.0.9",
+    "element-ui": "2.12.0",
+    "vue": "^2.6.10"
+  },
+  "peerDependencies": {},
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.0.0",
+    "@vue/cli-service": "^4.0.0",
+    "core-js": "^3.3.2",
+    "node-sass": "^4.12.0",
+    "numericjs": "^1.2.6",
+    "raw-loader": "^3.1.0",
+    "sass-loader": "^8.0.0",
+    "vue-template-compiler": "^2.6.10"
+  }
+}

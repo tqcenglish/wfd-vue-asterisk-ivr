@@ -1,0 +1,96 @@
+{
+    "nodes": [
+        {
+            "type": "ivr-start-node",
+            "clazz": "ivr-start",
+            "size": [
+                30,
+                30
+            ],
+            "label": "",
+            "shape": "ivr-start-node",
+            "x": 268.78125,
+            "y": 41.5,
+            "id": "ivr-start1604562081563",
+            "style": {}
+        },
+        {
+            "type": "ivr-exten-node",
+            "clazz": "ivr-exten",
+            "size": [
+                30,
+                30
+            ],
+            "label": "900",
+            "shape": "ivr-exten-node",
+            "x": 131.78125,
+            "y": 216.5,
+            "id": "ivr-exten1604562083051",
+            "style": {},
+            "exten": "900"
+        },
+        {
+            "type": "ivr-exten-node",
+            "clazz": "ivr-exten",
+            "size": [
+                30,
+                30
+            ],
+            "label": "500",
+            "shape": "ivr-exten-node",
+            "x": 421.28125,
+            "y": 225.5,
+            "id": "ivr-exten1604562086837",
+            "style": {},
+            "exten": "500"
+        }
+    ],
+    "edges": [
+        {
+            "id": "flow1604563279425",
+            "clazz": "flow",
+            "source": "ivr-start1604562081563",
+            "target": "ivr-exten1604562083051",
+            "sourceAnchor": 0,
+            "targetAnchor": 0,
+            "type": "flow-polyline-round",
+            "style": {},
+            "startPoint": {
+                "x": 268.78125,
+                "y": 57,
+                "index": 0
+            },
+            "endPoint": {
+                "x": 131.78125,
+                "y": 201,
+                "index": 0
+            },
+            "pressValue": "2",
+            "label": "按2"
+        },
+        {
+            "id": "flow1604563282753",
+            "clazz": "flow",
+            "source": "ivr-start1604562081563",
+            "target": "ivr-exten1604562086837",
+            "sourceAnchor": 0,
+            "targetAnchor": 0,
+            "type": "flow-polyline-round",
+            "style": {},
+            "startPoint": {
+                "x": 268.78125,
+                "y": 57,
+                "index": 0
+            },
+            "endPoint": {
+                "x": 421.28125,
+                "y": 210,
+                "index": 0
+            },
+            "pressValue": "2",
+            "label": "按2"
+        }
+    ],
+    "combos": [],
+    "groups": []
+}

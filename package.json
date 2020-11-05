@@ -1,0 +1,21 @@
+{
+  "name": "wfd-vue-asterisk-ivr",
+  "version": "1.0.0",
+  "description": "wfd for asterisk",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "@koa/router": "^10.0.0",
+    "ding-dong": "^0.1.7",
+    "form-data": "^3.0.0",
+    "got": "^11.8.0",
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-static": "^5.0.0"
+  }
+}
