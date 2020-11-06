@@ -5,8 +5,8 @@
   "description": "a workflow designer base on @antv/g6",
   "main": "dist/wfd-vue.umd.min.js",
   "scripts": {
-    "serve": "vue-cli-service serve example/main.js",
-    "build-example": "vue-cli-service build example/main.js --dest docs",
+    "serve": "vue-cli-service serve main/main.js",
+    "build-main": "vue-cli-service build main/main.js --dest ivr",
     "build": "vue-cli-service build --target lib --name wfd-vue src/index.js",
     "test": "vue-cli-service test:unit"
   },
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/guozhaolong/wfd-vue#readme",
   "directories": {
-    "example": "example"
+    "main": "main"
   },
   "keywords": [
     "vue",

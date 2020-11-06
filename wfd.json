@@ -21,13 +21,13 @@
                 30,
                 30
             ],
-            "label": "900",
+            "label": "5004",
             "shape": "ivr-exten-node",
             "x": 131.78125,
-            "y": 216.5,
+            "y": 240.5,
             "id": "ivr-exten1604562083051",
             "style": {},
-            "exten": "900"
+            "exten": "5004"
         },
         {
             "type": "ivr-exten-node",
@@ -36,13 +36,28 @@
                 30,
                 30
             ],
-            "label": "500",
+            "label": "5004",
             "shape": "ivr-exten-node",
-            "x": 421.28125,
-            "y": 225.5,
+            "x": 420.28125,
+            "y": 231.5,
             "id": "ivr-exten1604562086837",
             "style": {},
-            "exten": "500"
+            "exten": "5004"
+        },
+        {
+            "type": "ivr-exten-node",
+            "clazz": "ivr-exten",
+            "size": [
+                30,
+                30
+            ],
+            "label": "5004",
+            "shape": "ivr-exten-node",
+            "x": 304.953125,
+            "y": 231.5,
+            "id": "ivr-exten1604565286761",
+            "style": {},
+            "exten": "5004"
         }
     ],
     "edges": [
@@ -62,11 +77,11 @@
             },
             "endPoint": {
                 "x": 131.78125,
-                "y": 201,
+                "y": 225,
                 "index": 0
             },
-            "pressValue": "2",
-            "label": "按2"
+            "pressValue": "1",
+            "label": "按1"
         },
         {
             "id": "flow1604563282753",
@@ -83,8 +98,30 @@
                 "index": 0
             },
             "endPoint": {
-                "x": 421.28125,
-                "y": 210,
+                "x": 420.28125,
+                "y": 216,
+                "index": 0
+            },
+            "pressValue": "3",
+            "label": "按3"
+        },
+        {
+            "id": "flow1604565299219",
+            "clazz": "flow",
+            "source": "ivr-start1604562081563",
+            "target": "ivr-exten1604565286761",
+            "sourceAnchor": 0,
+            "targetAnchor": 0,
+            "type": "flow-polyline-round",
+            "style": {},
+            "startPoint": {
+                "x": 268.78125,
+                "y": 57,
+                "index": 0
+            },
+            "endPoint": {
+                "x": 304.953125,
+                "y": 216,
                 "index": 0
             },
             "pressValue": "2",

@@ -1,5 +1,6 @@
 const AGIServer = require('ding-dong');
 const query = require('./process/query');
+const simple = require('./process/simple');
 const common = require('./process/common');
 
 const handler = (context) => {
@@ -9,13 +10,17 @@ const handler = (context) => {
     common.answer(context).then(() => {
         switch (context.variables['agi_arg_1']) {
             case "ivr":
-                return query.handler(context)
+                // return query.handler(context)
+                //     .then(() => {
+                //         return common.hangup(context);
+                //     })
+                //     .catch((err) => {
+                //         console.error(err);
+                //     });
+                return simple.handler(context)
                     .then(() => {
                         return common.hangup(context);
-                    })
-                    .catch((err) => {
-                        console.error(err);
-                    });;
+                    });
             default:
                 return common.hangup(context);
         }

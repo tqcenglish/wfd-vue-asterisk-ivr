@@ -1,7 +1,5 @@
 <template>
   <div id="app">
-    <el-button size="small" style="float:right;margin-top:6px;margin-right:6px;"
-      @click="()=>{this.$refs['wfd'].graph.saveXML()}">导出XML</el-button>
     <el-button size="small" style="float:right;margin-top:6px;margin-right:6px;" @click="saveJson">保存</el-button>
     <el-button size="small" style="float:right;margin-top:6px;margin-right:6px;"
       @click="()=>{this.$refs['wfd'].graph.saveImg()}">导出图片</el-button>
@@ -10,6 +8,10 @@
 </template>
 
 <script>
+let url = 'http://127.0.0.1:3300';
+if(process.env.NODE_ENV === 'production'){
+  url = ''
+}
 import WfdVue from "../src/components/Wfd";
 export default {
   name: "app",
@@ -30,7 +32,7 @@ export default {
   methods: {
     saveJson() {
       let jsonData = this.$refs["wfd"].graph.save();
-      fetch("http://127.0.0.1:3300/ivr", {
+      fetch(`${url}/ivr`, {
         body: JSON.stringify({ jsonData }),
         headers: {
           Accept: "application/json",
@@ -41,7 +43,7 @@ export default {
     },
 
     loadJson() {
-      fetch("http://127.0.0.1:3300/ivr", {
+      fetch(`${url}/ivr`, {
         method: "GET",
       })
         .then((res) => {

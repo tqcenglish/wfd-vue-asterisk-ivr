@@ -25,7 +25,7 @@ router.get('/ivr', (ctx, next) => {
     }
 });
 
-let staticPath = __dirname + '/../web/docs';
+let staticPath = __dirname + '/../web/ivr';
 console.info(`staticPath ${staticPath}`);
 app
     .use(cors())
@@ -33,6 +33,8 @@ app
     .use(bodyParser())
     .use(router.routes())
     .use(router.allowedMethods());
+
+    
 module.exports = {
     startKoaServer: () => {
         app.listen(3300);
